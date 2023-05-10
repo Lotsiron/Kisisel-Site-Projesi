@@ -29,6 +29,7 @@ body {
 }
 
 .header {
+  height: 120px;
   background-color: var(--vurgu);
   display: flex;
   align-items: center;
@@ -39,8 +40,6 @@ body {
   z-index: 99;
 }
 .header .navbar {
-  /*background-color: rgb(240, 251, 253);
-    border: 2px solid rgb(173, 243, 255); */
   margin: 3vh;
   padding: 2rem;
 }
@@ -83,14 +82,14 @@ body {
 }
 
 .ben {
-  min-height: 80vh;
+  min-height: 85vh;
   background: url(../resimler/Ben.webp) no-repeat;
   background-size: cover;
-
   z-index: 1;
 }
 
 .ben .isim {
+  /* transform: translate(0px , 0px); */
   font-size: 14vh;
   color: white;
 }
@@ -102,25 +101,17 @@ body {
 }
 .ben .portre {
   position: relative;
-  bottom: 0px;
   z-index: 3;
 }
 .ben .portre img {
-  max-width: 50%;;
+  max-width: 50%
 }
+
 .ben .isim .soyad {
   position: absolute;
   bottom: 20%;
   left: 10%;
   z-index: 4;
-}
-.ben .subtext {
-  position: absolute;
-  z-index: 4;
-  font-size: 30px;
-  color: white;
-  bottom: 10%;
-  right: 10%;
 }
 
 .yazi {
@@ -146,15 +137,14 @@ footer{
   html{
     font-size: 65%;
   }
-  .ben .isim {
-    font-size: 5.6vh;
-  }
 }
 /* mobil boyutu */
 @media (max-width:768px ) {
   .header .buttons .menu-button {
     display: inline-block;
   }
+  
+  /* Bar menu */
   #menu {
     display: none;
     position: absolute;
@@ -169,4 +159,11 @@ footer{
     display: block;
     margin: 18px;
   }
+  .ben .isim {
+    font-size: 5.6vh;
+  }
+}
+@media (  )
+{
+  
 }
