@@ -1,0 +1,172 @@
+html {
+  overflow-x: hidden; /* aşağıdaki kaydırma barını kaldırma */
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+* {
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+:root {
+  --arkaplan: #2e3a50;
+  --onplan: #82ffea;
+  --vurgu: #ffb608;
+  --aksan: #ffb608;
+}
+
+body {
+  background-color: var(--arkaplan);
+}
+
+.header {
+  background-color: var(--vurgu);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+.header .navbar {
+  /*background-color: rgb(240, 251, 253);
+    border: 2px solid rgb(173, 243, 255); */
+  margin: 3vh;
+  padding: 2rem;
+}
+
+.header .navbar a {
+  color: black;
+  margin: 0 15px;
+  font-size: large;
+  border-bottom: 3px solid transparent;
+  border-radius: 15%;
+  text-decoration: none;
+}
+
+.header .navbar .active,
+.header .navbar a:hover {
+  border-color: var(--arkaplan);
+  padding-bottom: 5px;
+  box-shadow: 0px 2px 0px 0px #2e3a5035;
+}
+.header .navbar a:hover {
+  opacity: 0.9;
+}
+
+.header .navbar .dropMenu{
+  position: absolute;
+  top: 95%;
+  right: 0px;
+  background-color: var(--vurgu);
+  border-radius: 20px;
+  height: calc(100vh - 9rem);
+  width: 30rem;
+}
+
+.header .buttons a img:hover {
+  opacity: 0.9;
+  transform: scale(1.1);
+}
+.header .buttons .menu-button {
+  display: none;
+}
+
+.ben {
+  min-height: 80vh;
+  background: url(../resimler/Ben.webp) no-repeat;
+  background-size: cover;
+
+  z-index: 1;
+}
+
+.ben .isim {
+  font-size: 14vh;
+  color: white;
+}
+.ben .isim .ad {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  z-index: 2;
+}
+.ben .portre {
+  position: relative;
+  bottom: 0px;
+  z-index: 3;
+}
+.ben .portre img {
+  max-width: 50%;;
+}
+.ben .isim .soyad {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  z-index: 4;
+}
+.ben .subtext {
+  position: absolute;
+  z-index: 4;
+  font-size: 30px;
+  color: white;
+  bottom: 10%;
+  right: 10%;
+}
+
+.yazi {
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  margin: 20px;
+  padding: 20px;
+}
+
+footer{
+  background-color: var(--vurgu);
+  margin: 20px;
+  padding: 15px;  
+}
+.footer .iletisim{
+  right: 5px;
+}
+
+
+/* responsive header için */ 
+/* tablet boyutu */
+@media (max-width:991px ) {
+  html{
+    font-size: 65%;
+  }
+  .ben .isim {
+    font-size: 5.6vh;
+  }
+}
+/* mobil boyutu */
+@media (max-width:768px ) {
+  .header .buttons .menu-button {
+    display: inline-block;
+  }
+  #menu {
+    display: none;
+    position: absolute;
+    background-color: var(--vurgu);
+    border-radius: 20px;
+    top: 95%;
+    height: 50vh;
+    width: 150px;
+    right: 20px;
+  }
+  .header .navbar a {
+    display: block;
+    margin: 18px;
+  }
+}
