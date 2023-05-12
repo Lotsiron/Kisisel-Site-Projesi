@@ -11,7 +11,7 @@
   // header küçülmesi 
   window.onscroll = function() {scrollFunction()};
   function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 120) {
+    if (document.documentElement.scrollTop > 120) {
       document.getElementById("header").style.height = "50px";
     } else {
       document.getElementById("header").style.height = "120px";
