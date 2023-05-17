@@ -2,6 +2,7 @@ html {
   overflow-x: hidden; /* aşağıdaki kaydırma barını kaldırma */
   scroll-padding-top: 9rem;
   scroll-behavior: smooth;
+  color: white;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
@@ -28,6 +29,15 @@ body {
   background-color: var(--arkaplan);
 }
 
+.yazi {
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  margin: 20px;
+  padding: 20px;
+}
+
+
+/*-----   HEADER   ----- */ 
 .header {
   height: 120px;
   background-color: var(--vurgu);
@@ -80,7 +90,10 @@ body {
 .header .buttons .menu-button {
   display: none;
 }
+/*----    HEADER SON    ----*/
 
+
+/*----   GİRİŞ PORTRE   ----*/
 .ben {
   min-height: 85vh;
   background: url(../resimler/Ben.webp) no-repeat;
@@ -101,28 +114,24 @@ body {
 }
 .ben .portre {
   position: relative;
-  bottom: 0;
-  top: 10%;
+  max-width: 600px;
+  bottom: 0%;
   z-index: 3;
 }
 .ben .portre img {
-  max-width: 800px;
-  bottom: 0;
+  position: relative;
+  max-width: 600px;
+  left: 10%;
 }
 
 .ben .isim .soyad {
   position: absolute;
-  bottom: 20%;
+  bottom: -10%;
   left: 10%;
   z-index: 4;
 }
+/*----   GİRİŞ SON    ----*/
 
-.yazi {
-  font-size: larger;
-  color: rgb(255, 255, 255);
-  margin: 20px;
-  padding: 20px;
-}
 
 footer{
   background-color: var(--vurgu);
@@ -134,11 +143,69 @@ footer{
 }
 
 
-/* responsive header için */ 
+/*----  ŞEHRİM SLİDER  ----*/
+.onceki,
+.sonraki {
+  cursor: pointer;
+  position: relative;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.onceki:hover,
+.sonraki:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.slide {
+  color: white;
+  font-size: 25px;
+  display: none;
+  align-items: center;
+  padding: 10px;
+}
+
+.kucukler {
+  margin-top: 12px;
+}
+.column {
+  width: 20%;
+}
+.kucukresim {
+  opacity: 0.75;
+}
+.active,.kucukresim:hover {
+  opacity: 1;
+}
+
+.resimIsim {
+  color: white;
+  font-size: 25px;
+}
+/*----  ŞEHRİM SLİDER SON  ----*/
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.footer .filetisim {
+  position: relative;
+  left: 30%;
+}
+
+/* responsiveness için */ 
 /* tablet boyutu */
 @media (max-width:991px ) {
   html{
-    font-size: 65%;
+    font-size: 85%;
   }
 }
 /* mobil boyutu */
@@ -163,9 +230,19 @@ footer{
     margin: 18px;
   }
   .ben .isim {
-    font-size: 7vh;
+    font-size: 10vh;
   }
   .ben .portre img {
     max-width: 100%;
+    left: 0%;
+  }
+}
+
+@media (max-width:580px ) {
+  .ben .isim {
+    font-size: 7vh;
+  }
+  .ben .isim .soyad {
+    bottom: 15%;
   }
 }
