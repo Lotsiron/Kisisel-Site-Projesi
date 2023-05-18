@@ -14,7 +14,7 @@
     <!-- HEADER -->
     <header class="header" id="header">
         <a href="./index.html">
-           <img src="resimler/Logo2.png" alt="Ana Ekran" height="50" id="Logo">
+           <img src="resimler/Logo2.png" alt="Ana Ekran" height="100" id="Logo">
        </a>
        <nav class="navbar" id="menu">
            <a href="./index.html">Hakkımda</a>
@@ -34,9 +34,34 @@
    </header>
    <!-- HEADER END -->
 
+    <form onsubmit="return false" class="container Ciletisim col-lg-6">
+        <section class="iletisim">
+                <div class="iadsoyad"> <p> Ad Soyad giriniz </p> 
+                    <input type="text" placeholder="Adınızı giriniz" id="iad"> <br><br>
+                    <input type="text" placeholder="Soyadınızı giriniz" id="isoyad"> <br><br>
+                </div>
+                <p> Emailinizi giriniz </p>
+                <input type="text" id="email" placeholder="E-mail giriniz"> <br><br>
+                <select id="il">
+                    <option disabled selected value> -- Bir İl Seçin -- </option>
+                    <option value="Ankara">Ankara</option>
+                    <option value="Eskişehir">Eskişehir</option>
+                    <option value="İstanbul">İstanbul</option>
+                    <option value="İzmit">İzmit</option>
+                    <option value="Sakarya">Sakarya</option>
+                    <option value="Diğer">Diğer</option>
+                </select> <br> <br>
+                <p> Mesajınızı giriniz </p>
+                <textarea id="mesaj" cols="30" rows="5"></textarea>
+        </section>
+        <section class="iletisim">
+                <button onclick="iGonder()">Gönder</button>
+        </section>
+    </form>
+
    <!-- FOOTER START-->
    <footer class="container-fluid d-flex justify-content-center align-items-center">
-    <div class="col-lg-6 offset-5" > Made by The Man Himself! </div>
+    <div class="col-lg-6 offset-5" style="color: black;" > Made by The Man Himself! </div>
     <div class="col-lg-1">
         <a href="./iletisim.html">İletişim</a>
     </div>

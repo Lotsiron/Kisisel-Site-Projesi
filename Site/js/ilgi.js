@@ -22,3 +22,14 @@
       document.getElementById("Logo").style.height = "100px";
     }
   } 
+
+  fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCEOXxzW2vU0P-0THehuIIeg&maxResults=10&key=AIzaSyDtCR559Fh4iKZRlHM3N-YvtAy9P2ICswo")
+  .then((veri)=>{
+      return veri.json()
+  }).then((data)=>{
+    console.log(data)
+    let videos = data.items
+    let videocontainer = document.querySelector(".youtube-container")
+    videocontainer.innerHTML = '<img src="${data.items.at(2).snippet.thumbnails.high.url}">'
+  })
+

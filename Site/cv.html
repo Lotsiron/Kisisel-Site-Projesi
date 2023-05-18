@@ -12,9 +12,9 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header class="header">
+    <header class="header" id="header">
         <a href="./index.html" id="header">
-           <img src="resimler/Logo2.png" alt="Ana Ekran" height="50" id="Logo">
+           <img src="resimler/Logo2.png" alt="Ana Ekran" height="100" id="Logo">
        </a>
        <nav class="navbar" id="menu">
            <a href="./index.html">Hakkımda</a>
@@ -35,23 +35,50 @@
     <!-- HEADER END -->
 
     <!-- İÇERİK -->
-    <section class="yazi">
-        <h1> Ortaokul</h1>
-        <h3> Ülkü Bora Ortaokulu</h3>
-    </section>
-    <section class="yazi">
-        <h1> Lise </h1>
-        <h3> Kartal Anadolu Lisesi </h3>
-    </section>
-    <section class="yazi">
-        <h1> Üniversite </h1>
-        <h3> Sakarya Üniversitesi </h3>
-    </section>
 
-
+    <main class="container-fluid">
+        <section class="row">
+            <article class="col-lg-7" >
+                <section class="cvSection">
+                    <h1> Ortaokul</h1>
+                    <h3> Ülkü Bora Ortaokulu</h3>
+                    <p> 7 yaşımda eğitim hayatım burada başladım. Ben başladığımda bu okul aynı zamanda ilkokuldu. Sabahları ilkokul öğle sonrası ortaokul
+                        (ya da tam tersi) gibi bir karma sistemdi. Sonradan sadece ortaokul olmasına karar verildi. Ne şanslıyım ki bu karar ben ortaokula
+                        geçince verildi. Ülkü Bora oğlunu ve eşini kaybetmenin üzüntüsü içinde; onların isimlerini ölümsüzleştirmek, onların sevgilerini 
+                        binlerce çocukta yaşamak ve yaşatmak adına bir çok okul yaptırmıştır. Kendisiyle tanışık olmasam da annem onunla okulun anaokulu için
+                        birlikte çalıştılar. Annem kendisinin çok sevecen ve yardım sever olduğunu söylerdi...
+                    </p>
+                </section>
+                <section class="cvSection">
+                    <h1> Lise </h1>
+                    <h3> Kartal Anadolu Lisesi </h3>
+                    <p> Benim zamanımda "Temel Eğitimden Ortaöğretime Geçiş Sistemi" olan TEOG vardı. Kısacası merkezi bir sınava giriyor ve puanınıza 
+                        ve konumunuza göre lise seçiyordunuz. Şimdi de benzer bir sınav ve gelecekte de ismini değiştirip yine benzer bir sistem yaparlar.
+                        Bize yakın olduğu ve puanımın yettiği için Kartal Anadolu Lisesini seçmiştik. Okulun Almanca odaklı ve, İngilizce odaklı olarak iki
+                        farklı gruplaması vardı. İngilizce puanı daha yüksekti ve ben de İngilizce odaklı bir sınıfa yerleştim. 
+                    </p>
+                </section>
+                <section class="cvSection">
+                    <h1> Üniversite </h1>
+                    <h3> Sakarya Üniversitesi </h3>
+                    <p> Uzun süre boyunca ne seçeciğeme dair kararsızdım. En sonunda bilgisayar mühendisliği okumak istediğime karar vermiştim. 
+                        Merkezi üniversite sınavına girdim ve Sakarya Üniversitesinin Bilgisayar ve Bilişim Fakültesinin Bilgisayar Mühendisliği bölümüne
+                        yerleştim. Şimdi burada geleceğin yazılımcısı olmak için okuyorum. Bana şans dileyin!
+                    </p>
+                </section>
+            </article>
+            <aside class="col-lg-4 cvAside">
+                <figure>
+                    <img src="./resimler/mezun.png" alt="mezun" style="width: 100%;">
+                    <figcaption class="yazi"> BİR BİLGİSAYAR MÜHENDİSLİĞİ ÖĞRENCİSİ </figcaption>
+                    <h1 class="yazi"> AHMET YASİN PEKDEMİR</h1>
+                </figure>
+            </aside>
+        </section>
+    </main>
 
     <!-- FOOTER START-->
-    <footer class="footer"> <!-- justify-content-center align-items-center -->
+    <footer class="footer container-fluid"> <!-- justify-content-center align-items-center -->
         <div class="fmadeby"> Made by The Man Himself! </div>
         <div class="filetisim">
             <a href="./iletisim.html" >İletişim</a>

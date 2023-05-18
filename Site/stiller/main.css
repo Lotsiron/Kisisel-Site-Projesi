@@ -2,7 +2,6 @@ html {
   overflow-x: hidden; /* aşağıdaki kaydırma barını kaldırma */
   scroll-padding-top: 9rem;
   scroll-behavior: smooth;
-  color: white;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
@@ -27,6 +26,8 @@ html {
 
 body {
   background-color: var(--arkaplan);
+  font-size: larger;
+  color: white;
 }
 
 .yazi {
@@ -191,10 +192,88 @@ footer{
 }
 /*----  ŞEHRİM SLİDER SON  ----*/
 
+/*----  MİRASIM ----*/
+.btnMirasim{
+  float: right; 
+  position: relative; 
+  top: 20px; right: 20px;
+  background-color: var(--vurgu);
+  padding: 10px;
+  border-radius: 15px;
+}
+.btnMirasim:hover {
+  opacity: 0.9;
+  transform: scale(1.1);
+}
+.mirasimArticle {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1f2a40;
+  margin-bottom: 30px;
+}
+.mirasimArticle h1 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+/*---- MİRASIM SON ----*/
 
+/*-----    CV     ----*/
+.cvSection {
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  background-color: #1f2a40;
+  margin: 20px;
+  padding: 20px;
+}
+
+.cvAside {
+  font-size: larger;
+  background-color: #1f2a40;
+  margin: 20px;
+  padding: 20px;
+}
+/*-----   CV SON   ----*/
+
+/*----İlgi Alanlarım ---*/
+
+.ilgiAlan{
+  color: white;
+  background-color: #1f2a40;
+  margin: 20px;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---- İLETİŞİM ----*/
+.Ciletisim {
+  background-color: #1f2a40;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.iletisim {
+  font-size: larger;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+
+
+/*------ FOOTER ------*/
 .footer {
   display: flex;
   justify-content: center;
+  color: #1f2a40;
 }
 .footer .filetisim {
   position: relative;
@@ -208,6 +287,10 @@ footer{
     font-size: 85%;
   }
 }
+
+
+
+
 /* mobil boyutu */
 @media (max-width:768px ) {
   .header .buttons .menu-button {
