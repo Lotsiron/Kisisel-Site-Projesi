@@ -134,16 +134,6 @@ body {
 /*----   GİRİŞ SON    ----*/
 
 
-footer{
-  background-color: var(--vurgu);
-  margin: 20px;
-  padding: 15px;  
-}
-.footer .iletisim{
-  right: 5px;
-}
-
-
 /*----  ŞEHRİM SLİDER  ----*/
 .onceki,
 .sonraki {
@@ -242,7 +232,13 @@ footer{
   margin: 20px;
   padding: 20px;
 }
-
+.papagan {
+  max-height: 160px; overflow: hidden;
+}
+.CDC {
+  margin: 20px;
+  padding: 20px;
+}
 
 
 
@@ -257,6 +253,7 @@ footer{
 .Ciletisim {
   background-color: #1f2a40;
   padding: 30px;
+  border-radius: 30px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -269,6 +266,36 @@ footer{
 }
 
 
+
+
+
+/*------- İLETİŞİM SON ----*/
+
+/*------ HESAP -------*/
+.kullanıcı {
+  background-color: #1f2a40;
+  font-size: larger;
+  color: white;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  padding: 40px;
+  width: 360px;
+}
+
+.butonlar {
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: medium;
+  padding: 7px; 
+  background-color: #ffb608;
+  border-radius: 10px;
+}
+
+
+
 /*------ FOOTER ------*/
 .footer {
   display: flex;
@@ -279,6 +306,18 @@ footer{
   position: relative;
   left: 30%;
 }
+
+
+footer{
+  background-color: var(--vurgu);
+  margin: 20px;
+  padding: 15px;  
+}
+.footer .iletisim{
+  right: 5px;
+}
+
+
 
 /* responsiveness için */ 
 /* tablet boyutu */
